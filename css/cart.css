@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --green: #27ae60;
+    --orange: rgb(255, 139, 7);
+    --black:#192a56;
+    --red:rgb(255, 7, 7);
+    --yellow:rgba(21, 255, 0, 0.938);
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 1rem 7% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+  }
+
+  header .logo{
+    color:var(--black);
+    font-size: 1rem;
+    font-weight: bolder;
+
+  } 
+  header .logo i{
+    color:var(--orange);
+    
+  }
+  
+header .start{
+  margin-left: 15%;
+  
+
+}
+  header .navbar a {
+    font-size:1rem ;
+    border-radius: 0.8rem;
+    padding:0.5rem 2rem;
+    color:var(--black);
+
+  } 
+  header .navbar a.active,
+  header .navbar a:hover{
+    color:var(--black);
+    background: var(--orange);
+  }
+  header .icons i,
+  header .icons a{
+    cursor: pointer;
+    margin-left: 2rem;
+    height: 2rem;
+    line-height: 4.5rem;
+    width: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--black);
+    
+  }
+  header .icons a span{
+    color: var(--orange);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+  }
+
+
+
+  header .icons #menu-bars{
+    display: none;
+  }
+
+
+
+.products-container{
+    padding: 5%;
+    max-width: 1050px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 100PX;
+    
+  }
+  .products-container ion-icon{
+    font-size: 25px;
+    color: var(--orange);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  
+  }
+  
+  
+  .product-header{
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+    
+  }
+  
+  .product-title{
+    width: 45%;
+  }
+  
+  
+  .price{
+    width: 15%;
+    display:flex;
+    align-items: center;
+  
+  }
+  
+  .quantity{
+    width: 20%;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .total{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  
+  }
+  
+  .product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+  
+  }
+  
